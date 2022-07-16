@@ -1,3 +1,20 @@
+/// @DnDAction : YoYo Games.Common.Temp_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 0F17E7D5
+/// @DnDArgument : "var" "dice_to_add"
+/// @DnDArgument : "value" "self"
+var dice_to_add = self;
+
+/// @DnDAction : YoYo Games.Common.Function_Call
+/// @DnDVersion : 1
+/// @DnDHash : 40913BBD
+/// @DnDApplyTo : {obj_dice_manager}
+/// @DnDArgument : "function" "add_dice"
+/// @DnDArgument : "arg" "dice_to_add"
+with(obj_dice_manager) {
+	add_dice(dice_to_add);
+}
+
 /// @DnDAction : YoYo Games.Data Structures.Create_List
 /// @DnDVersion : 1
 /// @DnDHash : 25EEC39E
@@ -88,3 +105,9 @@ function reroll_dice()
 	/// @DnDArgument : "index" "temp_index"
 	dice_color = ds_list_find_value(possible_colors, temp_index);
 }
+
+/// @DnDAction : YoYo Games.Common.Function_Call
+/// @DnDVersion : 1
+/// @DnDHash : 1A70D44A
+/// @DnDArgument : "function" "reroll_dice"
+reroll_dice();
