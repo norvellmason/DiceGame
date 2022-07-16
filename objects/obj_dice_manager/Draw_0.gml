@@ -142,3 +142,22 @@ var count_six = number_count(6);
 /// @DnDArgument : "caption" ""Count One: ""
 /// @DnDArgument : "var" "count_one"
 draw_text(x + 0, y + 120, string("Count One: ") + string(count_one));
+
+/// @DnDAction : YoYo Games.Common.Function_Call
+/// @DnDVersion : 1
+/// @DnDHash : 4C3263A8
+/// @DnDArgument : "var" "total_red"
+/// @DnDArgument : "var_temp" "1"
+/// @DnDArgument : "function" "color_sum"
+/// @DnDArgument : "arg" ""Red""
+var total_red = color_sum("Red");
+
+/// @DnDAction : YoYo Games.Drawing.Draw_Value
+/// @DnDVersion : 1
+/// @DnDHash : 433F5A66
+/// @DnDArgument : "x_relative" "1"
+/// @DnDArgument : "y" "150"
+/// @DnDArgument : "y_relative" "1"
+/// @DnDArgument : "caption" ""Total Red: ""
+/// @DnDArgument : "var" "total_red"
+draw_text(x + 0, y + 150, string("Total Red: ") + string(total_red));
