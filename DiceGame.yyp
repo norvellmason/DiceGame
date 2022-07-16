@@ -1,5 +1,8 @@
 {
   "resources": [
+    {"id":{"name":"obj_timer","path":"objects/obj_timer/obj_timer.yy",},"order":1,},
+    {"id":{"name":"spt_dice","path":"sprites/spt_dice/spt_dice.yy",},"order":0,},
+    {"id":{"name":"obj_dice","path":"objects/obj_dice/obj_dice.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
@@ -7,7 +10,7 @@
     {"name":"Windows","path":"options/windows/options_windows.yy",},
     {"name":"operagx","path":"options/operagx/options_operagx.yy",},
   ],
-  "defaultScriptType": 0,
+  "defaultScriptType": 2,
   "isEcma": false,
   "configs": {
     "name": "Default",
