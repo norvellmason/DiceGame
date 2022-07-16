@@ -14,6 +14,27 @@ possible_colors = ds_list_create();
 /// @DnDArgument : "value_2" ""Green""
 ds_list_add(possible_colors, "Red", "Blue", "Green");
 
+/// @DnDAction : YoYo Games.Data Structures.Create_Map
+/// @DnDVersion : 1
+/// @DnDHash : 183BDB45
+/// @DnDArgument : "var" "color_map"
+color_map = ds_map_create();
+
+/// @DnDAction : YoYo Games.Data Structures.Map_Set_Value
+/// @DnDVersion : 1
+/// @DnDHash : 5C18C28A
+/// @DnDInput : 3
+/// @DnDArgument : "var" "color_map"
+/// @DnDArgument : "key" ""Red""
+/// @DnDArgument : "value" "c_red"
+/// @DnDArgument : "key_1" ""Blue""
+/// @DnDArgument : "value_1" "c_blue"
+/// @DnDArgument : "key_2" ""Green""
+/// @DnDArgument : "value_2" "c_green"
+ds_map_replace(color_map, "Red", c_red);
+ds_map_replace(color_map, "Blue", c_blue);
+ds_map_replace(color_map, "Green", c_green);
+
 /// @DnDAction : YoYo Games.Common.Function
 /// @DnDVersion : 1
 /// @DnDHash : 7EE13F5A

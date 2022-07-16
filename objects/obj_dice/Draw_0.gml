@@ -1,3 +1,19 @@
+/// @DnDAction : YoYo Games.Data Structures.Map_Get_Value
+/// @DnDVersion : 1
+/// @DnDHash : 6F95A71B
+/// @DnDArgument : "assignee" "new_color"
+/// @DnDArgument : "assignee_temp" "1"
+/// @DnDArgument : "var" "color_map"
+/// @DnDArgument : "key" "dice_color"
+var new_color = ds_map_find_value(color_map, dice_color);
+
+/// @DnDAction : YoYo Games.Drawing.Set_Color
+/// @DnDVersion : 1
+/// @DnDHash : 212DDED6
+/// @DnDArgument : "color" "new_color"
+/// @DnDArgument : "alpha" "false"
+draw_set_colour(new_color & $ffffff);draw_set_alpha(1);
+
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
 /// @DnDHash : 54AB60AB
