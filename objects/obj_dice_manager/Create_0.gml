@@ -182,6 +182,91 @@ function color_count(color_str)
 
 /// @DnDAction : YoYo Games.Common.Function
 /// @DnDVersion : 1
+/// @DnDHash : 365A670D
+/// @DnDArgument : "funcName" "color_sum"
+/// @DnDArgument : "arg" "color_str"
+function color_sum(color_str) 
+{
+	/// @DnDAction : YoYo Games.Data Structures.List_Count
+	/// @DnDVersion : 1
+	/// @DnDHash : 042202A5
+	/// @DnDParent : 365A670D
+	/// @DnDArgument : "assignee" "dice_count"
+	/// @DnDArgument : "assignee_temp" "1"
+	/// @DnDArgument : "var" "all_dice"
+	var dice_count = ds_list_size(all_dice);
+
+	/// @DnDAction : YoYo Games.Common.Temp_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 2C37AA78
+	/// @DnDParent : 365A670D
+	/// @DnDArgument : "var" "sum"
+	/// @DnDArgument : "value" "0"
+	var sum = 0;
+
+	/// @DnDAction : YoYo Games.Common.Temp_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 4B15255A
+	/// @DnDParent : 365A670D
+	/// @DnDArgument : "var" "i"
+	/// @DnDArgument : "value" "0"
+	var i = 0;
+
+	/// @DnDAction : YoYo Games.Loops.Repeat
+	/// @DnDVersion : 1
+	/// @DnDHash : 75E489EC
+	/// @DnDParent : 365A670D
+	/// @DnDArgument : "times" "dice_count"
+	repeat(dice_count)
+	{
+		/// @DnDAction : YoYo Games.Data Structures.List_Get_At
+		/// @DnDVersion : 1
+		/// @DnDHash : 0635EC43
+		/// @DnDParent : 75E489EC
+		/// @DnDArgument : "assignee" "dice"
+		/// @DnDArgument : "assignee_temp" "1"
+		/// @DnDArgument : "var" "all_dice"
+		/// @DnDArgument : "index" "i"
+		var dice = ds_list_find_value(all_dice, i);
+	
+		/// @DnDAction : YoYo Games.Common.If_Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 094438DD
+		/// @DnDParent : 75E489EC
+		/// @DnDArgument : "var" "dice.dice_color"
+		/// @DnDArgument : "value" "color_str"
+		if(dice.dice_color == color_str)
+		{
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 72D92897
+			/// @DnDParent : 094438DD
+			/// @DnDArgument : "expr" "dice.dice_num"
+			/// @DnDArgument : "expr_relative" "1"
+			/// @DnDArgument : "var" "sum"
+			sum += dice.dice_num;
+		}
+	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 1F2349CF
+		/// @DnDParent : 75E489EC
+		/// @DnDArgument : "expr" "1"
+		/// @DnDArgument : "expr_relative" "1"
+		/// @DnDArgument : "var" "i"
+		i += 1;
+	}
+
+	/// @DnDAction : YoYo Games.Common.Return
+	/// @DnDVersion : 1
+	/// @DnDHash : 52B47147
+	/// @DnDParent : 365A670D
+	/// @DnDArgument : "value" "sum"
+	return sum;
+}
+
+/// @DnDAction : YoYo Games.Common.Function
+/// @DnDVersion : 1
 /// @DnDHash : 1FC18975
 /// @DnDArgument : "funcName" "number_count"
 /// @DnDArgument : "arg" "num_to_count"
