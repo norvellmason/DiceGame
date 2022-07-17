@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "titlescreen",
-    "path": "sprites/titlescreen/titlescreen.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -22,7 +19,6 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":true,"eventNum":0,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":true,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
@@ -32,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_title",
+  "name": "obj_music",
   "tags": [],
   "resourceType": "GMObject",
 }
