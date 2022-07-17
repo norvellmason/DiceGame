@@ -9,12 +9,10 @@ if(lives <= 0)
 	/// @DnDVersion : 1
 	/// @DnDHash : 30FF5C13
 	/// @DnDParent : 2561A1EF
-	/// @DnDArgument : "x" "500"
-	/// @DnDArgument : "y" "100"
-	/// @DnDArgument : "xscale" "4"
-	/// @DnDArgument : "yscale" "4"
+	/// @DnDArgument : "x" "700"
+	/// @DnDArgument : "y" "300"
 	/// @DnDArgument : "caption" ""GAME OVER!""
-	draw_text_transformed(500, 100, string("GAME OVER!") + "", 4, 4, 0);
+	draw_text_transformed(700, 300, string("GAME OVER!") + "", 1, 1, 0);
 
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
@@ -29,11 +27,9 @@ if(lives <= 0)
 		/// @DnDVersion : 1
 		/// @DnDHash : 721A1D5B
 		/// @DnDParent : 39132F47
-		/// @DnDArgument : "x" "500"
-		/// @DnDArgument : "y" "175"
-		/// @DnDArgument : "xscale" "4"
-		/// @DnDArgument : "yscale" "4"
+		/// @DnDArgument : "x" "700"
+		/// @DnDArgument : "y" "500"
 		/// @DnDArgument : "caption" ""HIGH SCORE!""
-		draw_text_transformed(500, 175, string("HIGH SCORE!") + "", 4, 4, 0);
+		draw_text_transformed(700, 500, string("HIGH SCORE!") + "", 1, 1, 0);
 	}
 }

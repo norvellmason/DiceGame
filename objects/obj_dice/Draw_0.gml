@@ -1,3 +1,10 @@
+/// @DnDAction : YoYo Games.Drawing.Set_Font
+/// @DnDVersion : 1
+/// @DnDHash : 470D71C2
+/// @DnDArgument : "font" "Font_small"
+/// @DnDSaveInfo : "font" "Font_small"
+draw_set_font(Font_small);
+
 /// @DnDAction : YoYo Games.Data Structures.Map_Get_Value
 /// @DnDVersion : 1
 /// @DnDHash : 6F95A71B
@@ -140,19 +147,20 @@ draw_set_colour($FFFFFFFF & $ffffff);draw_set_alpha(1);
 /// @DnDVersion : 1.1
 /// @DnDHash : 72CD495B
 /// @DnDArgument : "halign" "fa_center"
+/// @DnDArgument : "valign" "fa_middle"
 draw_set_halign(fa_center);
-draw_set_valign(fa_top);
+draw_set_valign(fa_middle);
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
 /// @DnDHash : 77D102CD
 /// @DnDArgument : "x" "50"
 /// @DnDArgument : "x_relative" "1"
-/// @DnDArgument : "y" "110"
+/// @DnDArgument : "y" "125"
 /// @DnDArgument : "y_relative" "1"
 /// @DnDArgument : "caption" """"
 /// @DnDArgument : "var" "dice_color"
-draw_text(x + 50, y + 110, string("") + string(dice_color));
+draw_text(x + 50, y + 125, string("") + string(dice_color));
 
 /// @DnDAction : YoYo Games.Instances.Sprite_Scale
 /// @DnDVersion : 1
