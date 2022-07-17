@@ -96,6 +96,14 @@ function get_random_value(list)
 /// @DnDArgument : "funcName" "randomize_button"
 function randomize_button() 
 {
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 17C478A3
+	/// @DnDParent : 0653DEE3
+	/// @DnDArgument : "expr" "false"
+	/// @DnDArgument : "var" "is_pressed"
+	is_pressed = false;
+
 	/// @DnDAction : YoYo Games.Random.Get_Random_Number
 	/// @DnDVersion : 1
 	/// @DnDHash : 47A4696C
@@ -562,4 +570,29 @@ function button_should_be_pressed()
 	/// @DnDParent : 0DD5DCBD
 	/// @DnDArgument : "value" "should_be_pressed"
 	return should_be_pressed;
+}
+
+/// @DnDAction : YoYo Games.Common.Function
+/// @DnDVersion : 1
+/// @DnDHash : 25A64C85
+/// @DnDArgument : "funcName" "button_is_correct"
+function button_is_correct() 
+{
+	/// @DnDAction : YoYo Games.Common.Function_Call
+	/// @DnDVersion : 1
+	/// @DnDHash : 3E6FEAC6
+	/// @DnDBreak : 1
+
+	/// @DnDParent : 25A64C85
+	/// @DnDArgument : "var" "should_be_pressed"
+	/// @DnDArgument : "var_temp" "1"
+	/// @DnDArgument : "function" "button_should_be_pressed"
+	var should_be_pressed = button_should_be_pressed();
+
+	/// @DnDAction : YoYo Games.Common.Return
+	/// @DnDVersion : 1
+	/// @DnDHash : 0DE50366
+	/// @DnDParent : 25A64C85
+	/// @DnDArgument : "value" "is_pressed == should_be_pressed"
+	return is_pressed == should_be_pressed;
 }
