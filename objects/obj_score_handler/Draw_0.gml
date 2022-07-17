@@ -1,3 +1,10 @@
+/// @DnDAction : YoYo Games.Drawing.Set_Font
+/// @DnDVersion : 1
+/// @DnDHash : 74B6A5A8
+/// @DnDArgument : "font" "Font_small"
+/// @DnDSaveInfo : "font" "Font_small"
+draw_set_font(Font_small);
+
 /// @DnDAction : YoYo Games.Drawing.Set_Color
 /// @DnDVersion : 1
 /// @DnDHash : 3F79D72D
@@ -11,11 +18,9 @@ draw_set_alpha(l3F79D72D_0 / $ff);
 /// @DnDArgument : "x" "80"
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y_relative" "1"
-/// @DnDArgument : "xscale_relative" "1"
-/// @DnDArgument : "yscale_relative" "1"
 /// @DnDArgument : "caption" ""Current: ""
 /// @DnDArgument : "text" "score"
-draw_text_transformed(x + 80, y + 0, string("Current: ") + string(score), image_xscale + 1, image_yscale + 1, 0);
+draw_text_transformed(x + 80, y + 0, string("Current: ") + string(score), 1, 1, 0);
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
 /// @DnDVersion : 1
@@ -24,11 +29,9 @@ draw_text_transformed(x + 80, y + 0, string("Current: ") + string(score), image_
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y" "50"
 /// @DnDArgument : "y_relative" "1"
-/// @DnDArgument : "xscale_relative" "1"
-/// @DnDArgument : "yscale_relative" "1"
 /// @DnDArgument : "caption" ""High: ""
 /// @DnDArgument : "text" "global.highest_score"
-draw_text_transformed(x + 80, y + 50, string("High: ") + string(global.highest_score), image_xscale + 1, image_yscale + 1, 0);
+draw_text_transformed(x + 80, y + 50, string("High: ") + string(global.highest_score), 1, 1, 0);
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1

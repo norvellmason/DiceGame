@@ -236,11 +236,11 @@ if(is_pressed)
 	/// @DnDArgument : "x_relative" "1"
 	/// @DnDArgument : "y" "125"
 	/// @DnDArgument : "y_relative" "1"
-	/// @DnDArgument : "xscale_relative" "1"
-	/// @DnDArgument : "yscale_relative" "1"
+	/// @DnDArgument : "xscale" "0.9"
+	/// @DnDArgument : "yscale" "0.9"
 	/// @DnDArgument : "caption" ""
 	/// @DnDArgument : "text" "display_label"
-	draw_text_transformed(x + 190, y + 125, "" + string(display_label), image_xscale + 1, image_yscale + 1, 0);
+	draw_text_transformed(x + 190, y + 125, "" + string(display_label), 0.9, 0.9, 0);
 }
 
 /// @DnDAction : YoYo Games.Common.Else
@@ -296,11 +296,9 @@ else
 	/// @DnDArgument : "x_relative" "1"
 	/// @DnDArgument : "y" "125"
 	/// @DnDArgument : "y_relative" "1"
-	/// @DnDArgument : "xscale_relative" "1"
-	/// @DnDArgument : "yscale_relative" "1"
 	/// @DnDArgument : "caption" ""
 	/// @DnDArgument : "text" "display_label"
-	draw_text_transformed(x + 190, y + 125, "" + string(display_label), image_xscale + 1, image_yscale + 1, 0);
+	draw_text_transformed(x + 190, y + 125, "" + string(display_label), 1, 1, 0);
 }
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
