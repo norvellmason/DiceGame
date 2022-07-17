@@ -261,11 +261,6 @@ function randomize_button()
 	evaluator_value = floor(random_range(lower_bound, upper_bound + 1));
 }
 
-/// @DnDAction : YoYo Games.Random.Randomize
-/// @DnDVersion : 1
-/// @DnDHash : 48BFD554
-randomize();
-
 /// @DnDAction : YoYo Games.Common.Function_Call
 /// @DnDVersion : 1
 /// @DnDHash : 6A4F5BA0

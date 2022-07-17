@@ -58,11 +58,19 @@ ds_map_replace(color_map, "Green", c_green);
 /// @DnDArgument : "funcName" "reroll_dice"
 function reroll_dice() 
 {
-	/// @DnDAction : YoYo Games.Random.Randomize
+	/// @DnDAction : YoYo Games.Particles.Effect
 	/// @DnDVersion : 1
-	/// @DnDHash : 0491763B
+	/// @DnDHash : 583FCEE8
 	/// @DnDParent : 7EE13F5A
-	randomize();
+	/// @DnDArgument : "x" "50"
+	/// @DnDArgument : "x_relative" "1"
+	/// @DnDArgument : "y" "50"
+	/// @DnDArgument : "y_relative" "1"
+	/// @DnDArgument : "type" "1"
+	/// @DnDArgument : "where" "1"
+	/// @DnDArgument : "size" "1"
+	/// @DnDArgument : "color" "$FF7AFFF3"
+	effect_create_above(1, x + 50, y + 50, 1, $FF7AFFF3 & $ffffff);
 
 	/// @DnDAction : YoYo Games.Random.Get_Random_Number
 	/// @DnDVersion : 1
