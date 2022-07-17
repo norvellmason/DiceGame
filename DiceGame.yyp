@@ -19,6 +19,7 @@
     {"id":{"name":"obj_high_score","path":"objects/obj_high_score/obj_high_score.yy",},"order":6,},
     {"id":{"name":"die_6","path":"sprites/die_6/die_6.yy",},"order":6,},
     {"id":{"name":"obj_score_handler","path":"objects/obj_score_handler/obj_score_handler.yy",},"order":5,},
+    {"id":{"name":"heart","path":"sprites/heart/heart.yy",},"order":12,},
     {"id":{"name":"board","path":"sprites/board/board.yy",},"order":0,},
     {"id":{"name":"die_4","path":"sprites/die_4/die_4.yy",},"order":4,},
     {"id":{"name":"obj_dice","path":"objects/obj_dice/obj_dice.yy",},"order":0,},
