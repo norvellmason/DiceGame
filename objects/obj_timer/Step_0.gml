@@ -105,11 +105,11 @@ if(time_remaining <= 0)
 		/// @DnDAction : YoYo Games.Common.Function_Call
 		/// @DnDVersion : 1
 		/// @DnDHash : 100597F3
-		/// @DnDApplyTo : {obj_dice}
+		/// @DnDApplyTo : {obj_dice_manager}
 		/// @DnDParent : 49B07742
-		/// @DnDArgument : "function" "reroll_dice"
-		with(obj_dice) {
-			reroll_dice();
+		/// @DnDArgument : "function" "reroll_all_dice"
+		with(obj_dice_manager) {
+			reroll_all_dice();
 		}
 	
 		/// @DnDAction : YoYo Games.Common.Function_Call

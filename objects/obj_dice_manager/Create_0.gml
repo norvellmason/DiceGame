@@ -22,6 +22,47 @@ function add_dice(dice_to_add)
 
 /// @DnDAction : YoYo Games.Common.Function
 /// @DnDVersion : 1
+/// @DnDHash : 3228D0CC
+/// @DnDArgument : "funcName" "reroll_all_dice"
+function reroll_all_dice() 
+{
+	/// @DnDAction : YoYo Games.Data Structures.List_Count
+	/// @DnDVersion : 1
+	/// @DnDHash : 4BB6DA3B
+	/// @DnDParent : 3228D0CC
+	/// @DnDArgument : "assignee" "all_dice_count"
+	/// @DnDArgument : "assignee_temp" "1"
+	/// @DnDArgument : "var" "all_dice"
+	var all_dice_count = ds_list_size(all_dice);
+
+	/// @DnDAction : YoYo Games.Loops.For_Loop
+	/// @DnDVersion : 1
+	/// @DnDHash : 76BB4249
+	/// @DnDParent : 3228D0CC
+	/// @DnDArgument : "init_temp" "1"
+	/// @DnDArgument : "cond" "i < all_dice_count"
+	for(var i = 0; i < all_dice_count; i += 1) {
+		/// @DnDAction : YoYo Games.Data Structures.List_Get_At
+		/// @DnDVersion : 1
+		/// @DnDHash : 6FF83FAC
+		/// @DnDParent : 76BB4249
+		/// @DnDArgument : "assignee" "current_dice"
+		/// @DnDArgument : "assignee_temp" "1"
+		/// @DnDArgument : "var" "all_dice"
+		/// @DnDArgument : "index" "i"
+		var current_dice = ds_list_find_value(all_dice, i);
+	
+		/// @DnDAction : YoYo Games.Common.Function_Call
+		/// @DnDVersion : 1
+		/// @DnDHash : 49B07344
+		/// @DnDParent : 76BB4249
+		/// @DnDArgument : "function" "current_dice.reroll_dice"
+		current_dice.reroll_dice();
+	}
+}
+
+/// @DnDAction : YoYo Games.Common.Function
+/// @DnDVersion : 1
 /// @DnDHash : 4EAD2068
 /// @DnDArgument : "funcName" "get_sum"
 function get_sum() 
