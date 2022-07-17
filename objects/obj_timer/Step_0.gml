@@ -1,5 +1,81 @@
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
+/// @DnDHash : 16B10459
+/// @DnDApplyTo : {obj_score_handler}
+/// @DnDArgument : "var" "score"
+/// @DnDArgument : "op" "1"
+/// @DnDArgument : "value" "5"
+with(obj_score_handler) var l16B10459_0 = score < 5;
+if(l16B10459_0)
+{
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 65661305
+	/// @DnDParent : 16B10459
+	/// @DnDArgument : "expr" "20"
+	/// @DnDArgument : "var" "level_time"
+	level_time = 20;
+}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 7B103725
+/// @DnDApplyTo : {obj_score_handler}
+/// @DnDArgument : "var" "score"
+/// @DnDArgument : "op" "4"
+/// @DnDArgument : "value" "5"
+with(obj_score_handler) var l7B103725_0 = score >= 5;
+if(l7B103725_0)
+{
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 65E5B60C
+	/// @DnDParent : 7B103725
+	/// @DnDArgument : "expr" "15"
+	/// @DnDArgument : "var" "level_time"
+	level_time = 15;
+}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 44D65EAA
+/// @DnDApplyTo : {obj_score_handler}
+/// @DnDArgument : "var" "score"
+/// @DnDArgument : "op" "4"
+/// @DnDArgument : "value" "10"
+with(obj_score_handler) var l44D65EAA_0 = score >= 10;
+if(l44D65EAA_0)
+{
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 5F42502F
+	/// @DnDParent : 44D65EAA
+	/// @DnDArgument : "expr" "10"
+	/// @DnDArgument : "var" "level_time"
+	level_time = 10;
+}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 19574A31
+/// @DnDApplyTo : {obj_score_handler}
+/// @DnDArgument : "var" "score"
+/// @DnDArgument : "op" "4"
+/// @DnDArgument : "value" "20"
+with(obj_score_handler) var l19574A31_0 = score >= 20;
+if(l19574A31_0)
+{
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 63A0910E
+	/// @DnDParent : 19574A31
+	/// @DnDArgument : "expr" "8"
+	/// @DnDArgument : "var" "level_time"
+	level_time = 8;
+}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
 /// @DnDHash : 4DDFB8C8
 /// @DnDArgument : "var" "start_time_remaining"
 /// @DnDArgument : "op" "2"
