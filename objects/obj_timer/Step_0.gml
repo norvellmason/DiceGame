@@ -92,6 +92,35 @@ else
 			/// @DnDArgument : "expr" "true"
 			/// @DnDArgument : "var" "handled_score"
 			handled_score = true;
+		
+			/// @DnDAction : YoYo Games.Common.If_Expression
+			/// @DnDVersion : 1
+			/// @DnDHash : 4335E51F
+			/// @DnDParent : 75728BA7
+			/// @DnDArgument : "expr" "correct_return"
+			if(correct_return)
+			{
+				/// @DnDAction : YoYo Games.Particles.Effect
+				/// @DnDVersion : 1
+				/// @DnDHash : 6528353D
+				/// @DnDParent : 4335E51F
+				/// @DnDArgument : "x" "500"
+				/// @DnDArgument : "y" "500"
+				/// @DnDArgument : "size" "2"
+				/// @DnDArgument : "color" "$FF00FF15"
+				effect_create_below(0, 500, 500, 2, $FF00FF15 & $ffffff);
+			
+				/// @DnDAction : YoYo Games.Particles.Effect
+				/// @DnDVersion : 1
+				/// @DnDHash : 3997B8F6
+				/// @DnDParent : 4335E51F
+				/// @DnDArgument : "x" "500"
+				/// @DnDArgument : "y" "500"
+				/// @DnDArgument : "type" "3"
+				/// @DnDArgument : "size" "2"
+				/// @DnDArgument : "color" "$FF00FF15"
+				effect_create_below(3, 500, 500, 2, $FF00FF15 & $ffffff);
+			}
 		}
 	
 		/// @DnDAction : YoYo Games.Common.Variable
