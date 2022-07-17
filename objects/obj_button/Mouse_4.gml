@@ -8,9 +8,9 @@ is_pressed = !is_pressed;
 /// @DnDAction : YoYo Games.Audio.Play_Audio
 /// @DnDVersion : 1
 /// @DnDHash : 63DECC64
-/// @DnDArgument : "soundid" "Sound3"
-/// @DnDSaveInfo : "soundid" "Sound3"
-audio_play_sound(Sound3, 0, 0);
+/// @DnDArgument : "soundid" "button"
+/// @DnDSaveInfo : "soundid" "button"
+audio_play_sound(button, 0, 0);
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1

@@ -14,11 +14,11 @@
   "soundFile": "music.mp3",
   "duration": 113.11018,
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Sounds",
+    "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Music",
+  "name": "music",
   "tags": [],
   "resourceType": "GMSound",
 }
