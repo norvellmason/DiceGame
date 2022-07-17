@@ -50,16 +50,5 @@ function handle_score(win)
 		/// @DnDArgument : "expr_relative" "1"
 		/// @DnDArgument : "var" "lives"
 		lives += -1;
-	
-		/// @DnDAction : YoYo Games.Common.If_Variable
-		/// @DnDVersion : 1
-		/// @DnDHash : 7DB44147
-		/// @DnDParent : 4E3F88CA
-		/// @DnDArgument : "var" "lives"
-		/// @DnDArgument : "op" "3"
-		if(lives <= 0)
-		{
-		
-		}
 	}
 }

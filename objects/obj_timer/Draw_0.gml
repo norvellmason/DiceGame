@@ -19,6 +19,33 @@ draw_rectangle(x + 0, y + 0, x + 66, y + ((time_remaining / level_time) * 713)*-
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
+/// @DnDHash : 4F1BF672
+/// @DnDArgument : "var" "global.game_has_started"
+/// @DnDArgument : "value" "false"
+if(global.game_has_started == false)
+{
+	/// @DnDAction : YoYo Games.Drawing.Set_Color
+	/// @DnDVersion : 1
+	/// @DnDHash : 6B477260
+	/// @DnDParent : 4F1BF672
+	draw_set_colour($FFFFFFFF & $ffffff);
+	var l6B477260_0=($FFFFFFFF >> 24);
+	draw_set_alpha(l6B477260_0 / $ff);
+
+	/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
+	/// @DnDVersion : 1
+	/// @DnDHash : 10EF465E
+	/// @DnDParent : 4F1BF672
+	/// @DnDArgument : "x" "700"
+	/// @DnDArgument : "y" "400"
+	/// @DnDArgument : "xscale" "8"
+	/// @DnDArgument : "yscale" "8"
+	/// @DnDArgument : "caption" ""GET READY...""
+	draw_text_transformed(700, 400, string("GET READY...") + "", 8, 8, 0);
+}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
 /// @DnDHash : 3480D8B5
 /// @DnDArgument : "var" "is_resetting"
 /// @DnDArgument : "value" "true"
