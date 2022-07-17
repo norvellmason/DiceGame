@@ -30,4 +30,14 @@ if(time_remaining <= 0)
 	with(obj_dice) {
 		reroll_dice();
 	}
+
+	/// @DnDAction : YoYo Games.Common.Function_Call
+	/// @DnDVersion : 1
+	/// @DnDHash : 1BC44709
+	/// @DnDApplyTo : {obj_button_manager}
+	/// @DnDParent : 5A4F4B25
+	/// @DnDArgument : "function" "randomize_buttons"
+	with(obj_button_manager) {
+		randomize_buttons();
+	}
 }

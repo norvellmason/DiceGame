@@ -58,6 +58,12 @@ ds_map_replace(color_map, "Green", c_green);
 /// @DnDArgument : "funcName" "reroll_dice"
 function reroll_dice() 
 {
+	/// @DnDAction : YoYo Games.Random.Randomize
+	/// @DnDVersion : 1
+	/// @DnDHash : 0491763B
+	/// @DnDParent : 7EE13F5A
+	randomize();
+
 	/// @DnDAction : YoYo Games.Random.Get_Random_Number
 	/// @DnDVersion : 1
 	/// @DnDHash : 35EB648E

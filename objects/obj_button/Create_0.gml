@@ -90,57 +90,98 @@ function get_random_value(list)
 	return return_value;
 }
 
+/// @DnDAction : YoYo Games.Common.Function
+/// @DnDVersion : 1
+/// @DnDHash : 0653DEE3
+/// @DnDArgument : "funcName" "randomize_button"
+function randomize_button() 
+{
+	/// @DnDAction : YoYo Games.Random.Get_Random_Number
+	/// @DnDVersion : 1
+	/// @DnDHash : 47A4696C
+	/// @DnDParent : 0653DEE3
+	/// @DnDArgument : "var" "num_to_track"
+	/// @DnDArgument : "type" "1"
+	/// @DnDArgument : "min" "1"
+	/// @DnDArgument : "max" "6"
+	num_to_track = floor(random_range(1, 6 + 1));
+
+	/// @DnDAction : YoYo Games.Random.Choose
+	/// @DnDVersion : 1
+	/// @DnDHash : 3AD4A8CF
+	/// @DnDInput : 3
+	/// @DnDParent : 0653DEE3
+	/// @DnDArgument : "var" "color_to_track"
+	/// @DnDArgument : "option" ""Red""
+	/// @DnDArgument : "option_1" ""Blue""
+	/// @DnDArgument : "option_2" ""Green""
+	color_to_track = choose("Red", "Blue", "Green");
+
+	/// @DnDAction : YoYo Games.Common.Function_Call
+	/// @DnDVersion : 1
+	/// @DnDHash : 105B2504
+	/// @DnDParent : 0653DEE3
+	/// @DnDArgument : "var" "count_or_total"
+	/// @DnDArgument : "function" "get_random_value"
+	/// @DnDArgument : "arg" "count_or_total_list"
+	count_or_total = get_random_value(count_or_total_list);
+
+	/// @DnDAction : YoYo Games.Common.Function_Call
+	/// @DnDVersion : 1
+	/// @DnDHash : 5A6006F5
+	/// @DnDParent : 0653DEE3
+	/// @DnDArgument : "var" "evaluator_type"
+	/// @DnDArgument : "function" "get_random_value"
+	/// @DnDArgument : "arg" "evaluator_types"
+	evaluator_type = get_random_value(evaluator_types);
+
+	/// @DnDAction : YoYo Games.Random.Get_Random_Number
+	/// @DnDVersion : 1
+	/// @DnDHash : 640BA0A4
+	/// @DnDParent : 0653DEE3
+	/// @DnDArgument : "var" "evaluator_value"
+	/// @DnDArgument : "type" "1"
+	/// @DnDArgument : "min" "5"
+	/// @DnDArgument : "max" "25"
+	evaluator_value = floor(random_range(5, 25 + 1));
+
+	/// @DnDAction : YoYo Games.Common.Function_Call
+	/// @DnDVersion : 1
+	/// @DnDHash : 5D55F178
+	/// @DnDParent : 0653DEE3
+	/// @DnDArgument : "var" "tracking_type"
+	/// @DnDArgument : "function" "get_random_value"
+	/// @DnDArgument : "arg" "tracking_types"
+	tracking_type = get_random_value(tracking_types);
+}
+
+/// @DnDAction : YoYo Games.Random.Randomize
+/// @DnDVersion : 1
+/// @DnDHash : 48BFD554
+randomize();
+
 /// @DnDAction : YoYo Games.Common.Function_Call
 /// @DnDVersion : 1
-/// @DnDHash : 5D55F178
-/// @DnDArgument : "var" "tracking_type"
-/// @DnDArgument : "function" "get_random_value"
-/// @DnDArgument : "arg" "tracking_types"
-tracking_type = get_random_value(tracking_types);
+/// @DnDHash : 6A4F5BA0
+/// @DnDArgument : "function" "randomize_button"
+randomize_button();
 
-/// @DnDAction : YoYo Games.Random.Get_Random_Number
+/// @DnDAction : YoYo Games.Common.Temp_Variable
 /// @DnDVersion : 1
-/// @DnDHash : 47A4696C
-/// @DnDArgument : "var" "num_to_track"
-/// @DnDArgument : "type" "1"
-/// @DnDArgument : "min" "1"
-/// @DnDArgument : "max" "6"
-num_to_track = floor(random_range(1, 6 + 1));
-
-/// @DnDAction : YoYo Games.Random.Choose
-/// @DnDVersion : 1
-/// @DnDHash : 3AD4A8CF
-/// @DnDInput : 3
-/// @DnDArgument : "var" "color_to_track"
-/// @DnDArgument : "option" ""Red""
-/// @DnDArgument : "option_1" ""Blue""
-/// @DnDArgument : "option_2" ""Green""
-color_to_track = choose("Red", "Blue", "Green");
+/// @DnDHash : 3E63E977
+/// @DnDArgument : "var" "new_button"
+/// @DnDArgument : "value" "self"
+var new_button = self;
 
 /// @DnDAction : YoYo Games.Common.Function_Call
 /// @DnDVersion : 1
-/// @DnDHash : 105B2504
-/// @DnDArgument : "var" "count_or_total"
-/// @DnDArgument : "function" "get_random_value"
-/// @DnDArgument : "arg" "count_or_total_list"
-count_or_total = get_random_value(count_or_total_list);
-
-/// @DnDAction : YoYo Games.Common.Function_Call
-/// @DnDVersion : 1
-/// @DnDHash : 5A6006F5
-/// @DnDArgument : "var" "evaluator_type"
-/// @DnDArgument : "function" "get_random_value"
-/// @DnDArgument : "arg" "evaluator_types"
-evaluator_type = get_random_value(evaluator_types);
-
-/// @DnDAction : YoYo Games.Random.Get_Random_Number
-/// @DnDVersion : 1
-/// @DnDHash : 640BA0A4
-/// @DnDArgument : "var" "evaluator_value"
-/// @DnDArgument : "type" "1"
-/// @DnDArgument : "min" "5"
-/// @DnDArgument : "max" "25"
-evaluator_value = floor(random_range(5, 25 + 1));
+/// @DnDHash : 0DC9428D
+/// @DnDApplyTo : {obj_button_manager}
+/// @DnDArgument : "function" "add_button"
+/// @DnDArgument : "arg" "new_button"
+with(obj_button_manager) {
+	add_button(new_button);
+}
 
 /// @DnDAction : YoYo Games.Common.Function
 /// @DnDVersion : 1
