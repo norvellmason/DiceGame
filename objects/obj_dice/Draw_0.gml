@@ -130,6 +130,30 @@ if(dice_num == 6)
 /// @DnDArgument : "fill" "1"
 draw_rectangle(x + 3, y + 3, x + 98, y + 98, 0);
 
+/// @DnDAction : YoYo Games.Drawing.Set_Color
+/// @DnDVersion : 1
+/// @DnDHash : 35E080F8
+/// @DnDArgument : "alpha" "false"
+draw_set_colour($FFFFFFFF & $ffffff);draw_set_alpha(1);
+
+/// @DnDAction : YoYo Games.Drawing.Set_Alignment
+/// @DnDVersion : 1.1
+/// @DnDHash : 72CD495B
+/// @DnDArgument : "halign" "fa_center"
+draw_set_halign(fa_center);
+draw_set_valign(fa_top);
+
+/// @DnDAction : YoYo Games.Drawing.Draw_Value
+/// @DnDVersion : 1
+/// @DnDHash : 77D102CD
+/// @DnDArgument : "x" "50"
+/// @DnDArgument : "x_relative" "1"
+/// @DnDArgument : "y" "110"
+/// @DnDArgument : "y_relative" "1"
+/// @DnDArgument : "caption" """"
+/// @DnDArgument : "var" "dice_color"
+draw_text(x + 50, y + 110, string("") + string(dice_color));
+
 /// @DnDAction : YoYo Games.Instances.Sprite_Scale
 /// @DnDVersion : 1
 /// @DnDHash : 3FFB7D07
