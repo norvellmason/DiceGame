@@ -17,9 +17,9 @@ if(time_remaining <= 0)
 	/// @DnDVersion : 1
 	/// @DnDHash : 4983524E
 	/// @DnDParent : 5A4F4B25
-	/// @DnDArgument : "expr" "5"
+	/// @DnDArgument : "expr" "level_time"
 	/// @DnDArgument : "var" "time_remaining"
-	time_remaining = 5;
+	time_remaining = level_time;
 
 	/// @DnDAction : YoYo Games.Common.Function_Call
 	/// @DnDVersion : 1

@@ -12,7 +12,7 @@ draw_set_colour($FFFFE41E & $ffffff);draw_set_alpha(1);
 /// @DnDArgument : "y1_relative" "1"
 /// @DnDArgument : "x2" "66"
 /// @DnDArgument : "x2_relative" "1"
-/// @DnDArgument : "y2" "(time_remaining * 143)*-1"
+/// @DnDArgument : "y2" "((time_remaining / level_time) * 713)*-1"
 /// @DnDArgument : "y2_relative" "1"
 /// @DnDArgument : "fill" "1"
-draw_rectangle(x + 0, y + 0, x + 66, y + (time_remaining * 143)*-1, 0);
+draw_rectangle(x + 0, y + 0, x + 66, y + ((time_remaining / level_time) * 713)*-1, 0);
