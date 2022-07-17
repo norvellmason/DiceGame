@@ -34,6 +34,22 @@ function handle_score(win)
 		/// @DnDArgument : "expr_relative" "1"
 		/// @DnDArgument : "var" "score"
 		score += 1;
+	
+		/// @DnDAction : YoYo Games.Common.If_Expression
+		/// @DnDVersion : 1
+		/// @DnDHash : 101FF85F
+		/// @DnDParent : 62240FC7
+		/// @DnDArgument : "expr" "score > global.highest_score"
+		if(score > global.highest_score)
+		{
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 081964AC
+			/// @DnDParent : 101FF85F
+			/// @DnDArgument : "expr" "score"
+			/// @DnDArgument : "var" "global.highest_score"
+			global.highest_score = score;
+		}
 	}
 
 	/// @DnDAction : YoYo Games.Common.Else
